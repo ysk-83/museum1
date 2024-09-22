@@ -1525,8 +1525,7 @@ body::after {
   background: var(--clr-bg)
 }
 .hero__body {
-  position: relative;
-  display: grid
+  position: relative
 }
 @media(min-width:91.875em) {
   .hero__body {
@@ -1574,6 +1573,7 @@ body::after {
 }
 @media(min-width:47.99875em) {
   .hero__body {
+    display: grid;
     grid-template-columns: 30.55% 1fr
   }
 }
@@ -1665,8 +1665,10 @@ body::after {
     display: inline-flex
   }
 }
-.slider-hero {
-  min-width: 0
+@media(min-width:47.99875em) {
+  .slider-hero {
+    min-width: 0
+  }
 }
 .slider-hero__body {
   position: relative
@@ -1687,6 +1689,7 @@ body::after {
 .slider-hero__slide img {
   aspect-ratio: 123.45679%;
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover
 }
@@ -2634,7 +2637,18 @@ body::after {
   break-inside: avoid;
   max-width: 100%;
   -o-object-fit: cover;
-  object-fit: cover
+  object-fit: cover;
+  -webkit-transform: translateY(20%);
+  transform: translateY(20%);
+  opacity: 0;
+  transition: opacity .6s,-webkit-transform .6s;
+  transition: transform .6s,opacity .6s;
+  transition: transform .6s,opacity .6s,-webkit-transform .6s
+}
+.gallery__items img._watcher-view {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1
 }
 @media(min-width:120em) {
   .tickets {
