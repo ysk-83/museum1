@@ -848,7 +848,7 @@ body::after {
   left: 15px;
   width: 15px;
   height: 15px;
-  z-index: 5
+  z-index: 2
 }
 .block-form__item--calendar::after {
   content: "";
@@ -856,8 +856,12 @@ body::after {
   width: 17px;
   height: 17px;
   top: 14px;
-  right: 14px;
+  right: 17px;
   background: url(../img/icons/arrow-round.svg) center/100% no-repeat
+}
+.block-form__item--ticket::before,
+.block-form__item--time::before {
+  z-index: 5
 }
 .item-form-entry {
   padding: 15px;
