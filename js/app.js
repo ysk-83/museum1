@@ -1495,7 +1495,7 @@
         var datepicker_min = __webpack_require__(934);
         if (document.querySelector("[data-datepicker]")) {
             const picker = datepicker_min("[data-datepicker]", {
-                overlayPlaceholder: "Год (4 цифры)",
+                overlayPlaceholder: "Year (xxxx)",
                 startDay: 1,
                 formatter: (input, date, instance) => {
                     const value = date.toLocaleDateString();
