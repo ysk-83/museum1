@@ -302,7 +302,8 @@ textarea.input {
   min-width: 100%;
   left: 0;
   background-color: #fff;
-  border: 1px solid var(--clr-bg)
+  border: 1px solid var(--clr-bg);
+  z-index: 5
 }
 .select__scroll {
   overflow-y: auto;
