@@ -829,11 +829,13 @@ body::after {
   gap: 1.25rem
 }
 .block-form__row {
-  display: flex;
+  display: grid;
   gap: 1.25rem
 }
-.block-form__col {
-  flex: 1 1 50%
+@media(min-width:29.99875em) {
+  .block-form__row {
+    grid-template-columns: repeat(2,1fr)
+  }
 }
 .block-form__item {
   position: relative
@@ -847,15 +849,14 @@ body::after {
   height: 15px;
   z-index: 5
 }
-.block-form__item--calendar::after,
-.block-form__item--time::after {
+.block-form__item--calendar::after {
   content: "";
   position: absolute;
   width: 17px;
   height: 17px;
   top: 14px;
   right: 14px;
-  background: url(../img/icons/arrow-round.svg) center/cover no-repeat
+  background: url(../img/icons/arrow-round.svg) center/100% no-repeat
 }
 .item-form-entry {
   padding: 15px;
