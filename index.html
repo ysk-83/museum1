@@ -8,10 +8,10 @@
 	<!-- <style>body{opacity: 0;}</style> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&_v=20240930161419" rel="stylesheet">
-	<link href="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.css?_v=20240930161419" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&_v=20241001140120" rel="stylesheet">
+	<link href="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.css?_v=20241001140120" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/style.min.css?_v=20240930161419">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241001140120">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon.webp">
 	<link rel="icon" type="image.webp" sizes="32x32" href="img/favicon/favicon-32x32.webp">
@@ -22,7 +22,7 @@
 	<meta name="theme-color" content="#ffffff">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.js?_v=20240930161419"></script>
+	<script src="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.js?_v=20241001140120"></script>
 </head>
 
 <body>
@@ -478,7 +478,7 @@
 	<div id="popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<button data-close type="button" class="popup__close"><img src="img/icons/close.svg" alt=""></button>
+				<button data-close type="button" class="popup__close"><img src="img/icons/close.svg" alt="close button"></button>
 				<div class="popup__body">
 					<form action="#" class="form-popup">
 						<div class="form-popup__left-col">
@@ -493,8 +493,6 @@
 										<div class="block-form__item block-form__item--calendar icon-date"><input data-datepicker autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Date" class="input"></div>
 									</div>
 									<div class="block-form__col">
-										<!-- <div class="block-form__item block-form__item--time icon-time"><input autocomplete="off" type="time" min="9:00" max="18:00" step="1000"
-											name="form[]" data-error="Ошибка" placeholder="Time" class="input"></div> -->
 										<div class="block-form__item block-form__item--time icon-time">
 											<select name="form[]" data-class-modif="form">
 												<option value="">Time</option>
@@ -530,7 +528,7 @@
 								<div class="block-form__item icon-tel">
 									<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Phone" class="input">
 								</div>
-								<div class="block-form__item icon-ticket">
+								<div class="block-form__item block-form__item--ticket icon-ticket">
 									<select name="form[]" data-class-modif="form">
 										<option value="">Ticket Type</option>
 										<option value="1">Permanent exhibition</option>
@@ -643,7 +641,7 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20240930161419"></script>
+	<script src="js/app.min.js?_v=20241001140120"></script>
 </body>
 
 </html>
