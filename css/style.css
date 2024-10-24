@@ -2005,8 +2005,27 @@ body::after {
     pointer-events: none
   }
 }
-.slider-hero__wrapper {
-  min-height: 258px
+@media(min-width:92.5em) {
+  .slider-hero__wrapper {
+    min-height: 46.875rem
+  }
+}
+@media(min-width:23.4375em)and (max-width:92.5em) {
+  @supports(min-height:clamp(16.125rem ,5.689479638rem + 44.5248868778vw ,46.875rem)) {
+    .slider-hero__wrapper {
+      min-height: clamp(16.125rem ,5.689479638rem + 44.5248868778vw ,46.875rem)
+    }
+  }
+  @supports not (min-height:clamp(16.125rem ,5.689479638rem + 44.5248868778vw ,46.875rem)) {
+    .slider-hero__wrapper {
+      min-height: calc(16.125rem + 30.75*(100vw - 23.4375rem)/ 69.0625)
+    }
+  }
+}
+@media(max-width:23.4375em) {
+  .slider-hero__wrapper {
+    min-height: 16.125rem
+  }
 }
 .slider-hero__slide img {
   aspect-ratio: 123.45679%;
