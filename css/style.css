@@ -1383,7 +1383,7 @@ body::after {
 }
 .banner {
   height: 18.75rem;
-  background-image: url(../img/parallax-s.webp);
+  background-image: url(../img/parallax.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1392,13 +1392,7 @@ body::after {
 }
 @media(min-width:47.99875em) {
   .banner {
-    height: 25rem;
-    background-image: url(../img/parallax-m.webp)
-  }
-}
-@media(min-width:61.99875em) {
-  .banner {
-    background-image: url(../img/parallax.webp)
+    height: 25rem
   }
 }
 .header {
